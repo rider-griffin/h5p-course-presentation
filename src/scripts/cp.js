@@ -151,7 +151,7 @@ CoursePresentation.prototype.constructor = CoursePresentation;
  * @return {object}
  */
 CoursePresentation.prototype.getCurrentState = function () {
-  var state = this.previousState ? this.previousState : {};
+  var state = {};
   state.progress = this.getCurrentSlideIndex();
   if (!state.answers) {
     state.answers = [];
